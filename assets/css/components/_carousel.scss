@@ -1,0 +1,7 @@
+.VueCarousel-dot {
+  opacity: 0.3;
+  transition: 0.3s;
+  &--active {
+    opacity: 1;
+  }
+}
