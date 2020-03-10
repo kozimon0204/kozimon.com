@@ -16,7 +16,7 @@ const routerBase =
     : {}
 
 module.exports = {
-  routerBase,
+  ...routerBase,
 
   mode: 'universal',
 
