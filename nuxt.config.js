@@ -6,7 +6,18 @@ const meta = {
 
 const iconImages = '/images/icons/'
 
+const routerBase =
+  process.env.DEPLOY_ENV === 'GH_PAGES'
+    ? {
+        router: {
+          base: '/kozimon.com/'
+        }
+      }
+    : {}
+
 module.exports = {
+  routerBase,
+
   mode: 'universal',
 
   /*
