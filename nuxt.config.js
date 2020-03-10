@@ -4,22 +4,9 @@ const meta = {
   title: 'UPDATE'
 }
 
-const iconImages = process.env.DEPLOY_ENV === 'GH_PAGES'
-? '/kozimon.com/images/icons/'
-: '/images/icons/'
-
-const routerBase =
-  process.env.DEPLOY_ENV === 'GH_PAGES'
-    ? {
-        router: {
-          base: '/kozimon.com/'
-        }
-      }
-    : {}
+const iconImages = '/images/icons/'
 
 module.exports = {
-  ...routerBase,
-
   mode: 'universal',
 
   /*
