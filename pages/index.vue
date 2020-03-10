@@ -29,7 +29,7 @@ export default {
 <style lang="scss">
 .front {
   height: 100vh;
-  background: url('/images/deer.png');
+  background: url('~assets/images/deer.png');
   display: table;
   width: 100%;
   -webkit-animation: slide 60s linear infinite;

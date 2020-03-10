@@ -4,7 +4,9 @@ const meta = {
   title: 'UPDATE'
 }
 
-const iconImages = '/images/icons/'
+const iconImages = process.env.DEPLOY_ENV === 'GH_PAGES'
+? '/kozimon.com/images/icons/'
+: '/images/icons/'
 
 const routerBase =
   process.env.DEPLOY_ENV === 'GH_PAGES'
